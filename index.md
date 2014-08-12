@@ -27,7 +27,7 @@ title: alientourist
 <ul>
   {% for post in site.posts limit: 5 %}
   
-    ### {{ post.title }}
+    <h3> {{ post.title }} </h3>
 	
 	{{ post.content }}
   {% endfor %}
