@@ -1,7 +1,6 @@
 ---
 title: alientourist
 ---
-<!doctype html>
 <html>
 
 <head>
@@ -27,7 +26,8 @@ title: alientourist
 <section>
 <ul>
   {% for post in site.posts limit: 5 %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    ### {{ post.title }}
+	{{ post.content }}
   {% endfor %}
 </ul>
 </section>
